@@ -6,7 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddTransient<Context>();
-builder.Services.AddTransient<ICategoryDal, CategoryDal>();
+builder.Services.AddTransient<IWhoWeAreDetailDal,DfWhoWeAreDetailDal>();
+builder.Services.AddTransient<ICategoryDal, DfCategoryDal>();
+builder.Services.AddTransient<IProductDal, DfProductDal>();
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities.DTOs.CategoryDtos
 {
-    public class ListCategoryDto
+    public class GetListCategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
